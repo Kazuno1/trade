@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAXFOREXFUNDS | Funded Demo Trading</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="function.js"></script>
+</head>
+<body>
+<style>
+.trading-objectives-section {
+  background: #0a0f18;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.trading-objectives-section h2 {
+  color: #00b4d8;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.trading-objectives-section p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 40px;
+}
+
+.selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+select {
+  background: #111827;
+  color: #00b4d8;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.challenge-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.challenge-card {
+  background: rgba(17,24,39,0.85);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,180,216,0.4);
+}
+
+.challenge-card h3 {
+  color: #00b4d8;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  transition: all .2s ease;
+}
+
+.challenge-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.challenge-card ul li {
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.9);
+}
+</style>
+
+    <!-- TOP BAR / ANNOUNCEMENT -->
+  <div class="topbar">
+    <span>🔥 Special Deal:</span> MAXFOREXFUNDS rewards consistent traders.
+  </div>
+
+<header class="navbar">
+    <!-- LOGO -->
+    <a href="index.html" class="logo">MAXFOREXFUNDS</a>
+
+  <!-- NAVIGATION LINKS -->
+  <nav class="nav-links" id="navLinks">
+    <ul>
+      <!-- HOW IT WORKS -->
+      <li class="has-dropdown">
+        <a href="index.html#evaluation-process">How it works</a>
+        <ul class="dropdown">
+          <li><a href="index.html#evaluation-process">Evaluation Process</a></li>
+          <li><a href="index.html#trading-objectives">Trading Objectives</a></li>
+          <li><a href="index.html#terms-and-conditions">Tems and Conditions</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#pricing ">Pricing Plan</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+
+      <!-- TRADING -->
+      <li class="has-dropdown">
+        <a href="trading.html">Trading</a>
+        <ul class="dropdown">
+          <li><a href="trading.html#trading-update">Trading Update</a></li>
+          <li><a href="trading.html#economic-calendar">Economic Calendar</a></li>
+          <li><a href="trading.html#performance-coaches">Performance Coaches</a></li>
+          <li><a href="trading.html#trading-platforms">Trading Platforms</a></li>
+        </ul>
+      </li>
+
+      <!-- ABOUT US -->
+      <li class="has-dropdown">
+        <a href="about.html">About us</a>
+        <ul class="dropdown">
+          <li><a href="about.html#about">About Us</a></li>
+          <li><a href="about.html#careers">Careers</a></li>
+          <li><a href="about.html#rewards">Rewards</a></li>
+          <li><a href="about.html#contact">Contact Us</a></li>
+        </ul>
+      </li>
+
+      <li><a href="academy.html">Academy</a></li>
+      <li><a href="https://trade.maxforexfunds.com/?group=signup&user=&company=1752450204266x798585993672785900">Client Area</a></li>
+    </ul>
+  </nav>
+
+  <button class="mobile-toggle" id="mobileToggle">
+    ☰
+  </button>
+</header>
+
+<section class="trading-objectives-section" id="trading-objectives">
+  <div class="container">
+    <h2>Trading Objectives & Challenges</h2>
+    <p>Select your preferred currency and account balance to explore your best funding path.</p>
+
+    <!-- Selectors -->
+    <div class="selectors">
+      <label>Select Currency:</label>
+      <select id="currencySelect">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="YEN">YEN</option>
+        <option value="CAD">CAD</option>
+      </select>
+
+      <label>Choose Account Size:</label>
+      <select id="balanceSelect">
+        <option value="5000">$5,000</option>
+        <option value="10000">$10,000</option>
+        <option value="25000">$25,000</option>
+        <option value="50000">$50,000</option>
+        <option value="100000">$100,000</option>
+        <option value="200000">$200,000</option>
+        <option value="300000">$300,000</option>
+        <option value="500000">$500,000</option>
+      </select>
+    </div>
+
+    <!-- Challenge Comparison -->
+    <div class="challenge-comparison">
+      <div class="challenge-card" id="firststep">
+        <h3>1st Step</h3>
+        <div class="price">--</div>
+        <ul>
+          <li>Profit Target: 10%</li>
+          <li>Max Daily Loss: 4%</li>
+          <li>Max Overall Loss: 6%</li>
+          <li>Duration: Unlimited</li>
+          <li>Profit Split: 90%</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card" id="traditional">
+        <h3>Traditional</h3>
+        <div class="price">--</div>
+        <ul>
+          <li>Phase 1: 8% | Phase 2: 5%</li>
+          <li>Max Daily Loss: 5%</li>
+          <li>Overall Loss: 8%</li>
+          <li>Duration: Unlimited</li>
+          <li>Profit Split: 90%</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card" id="accelerated">
+        <h3>Accelerated</h3>
+        <div class="price">--</div>
+        <ul>
+          <li>Phase 1: 8% | Phase 2: 5%</li>
+          <li>No Consistency Rule</li>
+          <li>Max Daily Loss: 5%</li>
+          <li>Overall Loss: 8%</li>
+          <li>Profit Split: 90%</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card" id="instantfunded">
+        <h3>Instant Funded</h3>
+        <div class="price">--</div>
+        <ul>
+          <li>Instant Live Funded</li>
+          <li>Max Drawdown: -5%</li>
+          <li>Leverage: 1:10</li>
+          <li>Refund: 100%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>MAXFOREXFUNDS</h3>
+      <p>Empowering traders to grow, perform, and earn through simulated funding and performance-based programs.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">How it works</a></li>
+        <li><a href="index.html#evaluation-process">Evaluation Process</a></li>
+        <li><a href="index.html#trading-objectives">Trading Objectives</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="client-area.html">Client Area</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#careers">Careers</a></li>
+        <li><a href="about.html#rewards">Rewards</a></li>
+        <li><a href="about.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <h4>Subscribe</h4>
+      <p>Stay updated on funding programs and trading insights.</p>
+      <form class="footer-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MAXFOREXFUNDS. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  // --- Fade-in animation ---
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+  });
+
+  // --- Smooth fade-out navigation ---
+  document.querySelectorAll("a[href]").forEach(link => {
+    const href = link.getAttribute("href");
+    if (
+      href &&
+      !href.startsWith("#") &&
+      !href.startsWith("javascript:") &&
+      !href.includes("#")
+    ) {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.body.classList.remove("fade-in");
+        document.body.classList.add("fade-out");
+        setTimeout(() => (window.location.href = href), 400);
+      });
+    }
+  });
+
+  // --- Search Logic ---
+  function filterNavLinks() {
+    const input = document.getElementById("navSearch");
+    const resultsBox = document.getElementById("searchResults");
+    if (!input || !resultsBox) return;
+
+    const query = input.value.toLowerCase().trim();
+    const allLinks = document.querySelectorAll(".nav-links a, .footer-links a");
+
+    resultsBox.innerHTML = "";
+    if (query === "") {
+      resultsBox.style.display = "none";
+      return;
+    }
+
+    const matches = [];
+    allLinks.forEach(link => {
+      const text = link.textContent.toLowerCase();
+      const href = link.getAttribute("href");
+      if (text.includes(query)) matches.push({ text: link.textContent, href });
+    });
+
+    if (matches.length) {
+      matches.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item.text;
+        li.onclick = () => {
+          document.body.classList.remove("fade-in");
+          document.body.classList.add("fade-out");
+          setTimeout(() => (window.location.href = item.href), 400);
+        };
+        resultsBox.appendChild(li);
+      });
+      resultsBox.style.display = "block";
+    } else {
+      resultsBox.innerHTML = `<li style="color:#777;text-align:center;">No results found</li>`;
+      resultsBox.style.display = "block";
+    }
+  }
+
+    // --- FAQ Toggle ---
+  document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+      const answer = faqItem.querySelector(".faq-answer");
+
+      // Toggle active class
+      faqItem.classList.toggle("active");
+
+      // Smooth open/close animation
+      if (faqItem.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+
+  // --- Events ---
+  document.getElementById("navSearch").addEventListener("keyup", filterNavLinks);
+  document.getElementById("searchBtn").addEventListener("click", filterNavLinks);
+
+  // --- Hide dropdown when clicking elsewhere ---
+  document.addEventListener("click", e => {
+    const box = document.getElementById("searchResults");
+    const wrap = document.querySelector(".search-container");
+    if (wrap && !wrap.contains(e.target)) box.style.display = "none";
+  });
+</script>
+<!-- === SCRIPT === -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const pricingData = {
+    "1st Step": {5000:57,10000:99,25000:169,50000:299,100000:599,200000:999,300000:1399,500000:1999},
+    "Traditional": {5000:48,10000:90,25000:129,50000:249,100000:472,200000:899,300000:1199,500000:1700},
+    "Accelerated": {5000:59,10000:110,25000:179,50000:349,100000:610,200000:1099,300000:1599,500000:2460},
+    "Instant Funded": {5000:65,10000:99,25000:199,50000:299,100000:539,200000:1100}
+  };
+
+  const rates = { USD: 1, EUR: 0.92, YEN: 152.4, CAD: 1.36 };
+  const idMap = {
+    "1st Step": "firststep",
+    "Traditional": "traditional",
+    "Accelerated": "accelerated",
+    "Instant Funded": "instantfunded"
+  };
+
+  function updatePrices() {
+    const currency = document.getElementById("currencySelect").value;
+    const balance = parseInt(document.getElementById("balanceSelect").value);
+    const rate = rates[currency];
+
+    for (const type in pricingData) {
+      const amount = pricingData[type][balance];
+      const converted = amount ? (amount * rate).toFixed(2) : "-";
+      const card = document.getElementById(idMap[type]);
+      if (card) {
+        const priceEl = card.querySelector(".price");
+        priceEl.style.opacity = "0";
+        setTimeout(() => {
+          priceEl.textContent = amount ? `${currency} ${converted}` : "N/A";
+          priceEl.style.opacity = "1";
+        }, 150);
+      }
+    }
+  }
+
+  document.getElementById("currencySelect").addEventListener("change", updatePrices);
+  document.getElementById("balanceSelect").addEventListener("change", updatePrices);
+  updatePrices();
+});
+</script>
+</body>
+</html>
